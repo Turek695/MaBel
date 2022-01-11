@@ -118,13 +118,18 @@ a {
   align-items: center;
 }
 .banner {
-  background-image: url(../images/baner-placeholder.jpg);
   background-color: #B2967D;
+  background-image: url(../images/baner-placeholder.jpg);
   background-size: cover;
-  background-position: top right;
+  background-position: top center;
   color: #ECF8F8;
   height: 100vh;
+  text-align: right;
   width: 100%;
+}
+.banner-text {
+  font-weight: bolder;
+  font-size: 5em;
 }
 .bar-list {
   display: flex;
