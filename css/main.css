@@ -104,6 +104,7 @@ a {
   color: inherit;
 }
 .address-bar {
+  align-items: center;
   background-color: #B2967D;
   color: #ECF8F8;
   display: flex;
@@ -119,17 +120,18 @@ a {
 }
 .banner {
   background-color: #B2967D;
-  background-image: url(../images/baner-placeholder.jpg);
+  background-image: url(../images/PAT_9275.jpg);
   background-size: cover;
-  background-position: top center;
+  background-position: 50% 35%;
   color: #ECF8F8;
-  height: 100vh;
+  height: 100%;
   text-align: right;
   width: 100%;
 }
 .banner-text {
   font-weight: bolder;
   font-size: 5em;
+  margin-top: 1em;
 }
 .bar-list {
   display: flex;
@@ -156,6 +158,9 @@ a {
   flex-wrap: wrap;
   max-width: 700px;
   width: 100%;
+}
+.filter-azure {
+  filter: invert(100%) sepia(15%) saturate(925%) hue-rotate(158deg) brightness(100%) contrast(95%);
 }
 .footer {
   background-color: #B2967D;
@@ -184,11 +189,13 @@ html {
 html::-webkit-scrollbar {
   display: none;
 }
+.icon {
+  display: inline-block;
+}
 .navbar {
-  background-color: inherit;
+  background-color: #ECF8F8;
   display: flex;
   width: 100vw;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -198,9 +205,6 @@ html::-webkit-scrollbar {
 }
 .navbar__nav-area {
   flex: 1 1 60vw;
-}
-.page-tittle {
-  text-align: center;
 }
 .page {
   background-color: #ECF8F8;
@@ -233,4 +237,9 @@ html::-webkit-scrollbar {
   text-align: center;
   top: 90vh;
   transition: all 1s ease-in-out;
+}
+.top-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
