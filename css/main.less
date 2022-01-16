@@ -1,4 +1,4 @@
-@import 'reset.less';
+@import 'newreset.less';
 
 @color-cornsilk: #FEFAE0;
 @color-azure: #ECF8F8;
@@ -181,3 +181,59 @@ html::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
 }
+
+@media (max-width: 1024px) {
+    .page {
+        font-size: 0.75em;
+    }
+
+    // .gallery img {
+    //     object-fit:cover;
+    //     height: 400px;
+    //     &:hover {
+    //         transform: scale(1.6);
+    //         object-fit: scale-down;
+    //         z-index: 1;
+    //     }
+    // }
+}
+// @media (prefers-color-scheme: light) {
+//     .body {
+//         .theme (light);
+//     }
+
+//     .footer {
+//         .theme (dark);
+//     }
+
+//     .underline {
+//         border-bottom: 1px solid @color-dark;
+//     }
+// }
+// @media (prefers-color-scheme: dark) {
+//     .body {
+//         .theme (dark);
+//     }
+
+//     .footer {
+//         .theme (light);
+//     }
+
+//     .underline {
+//         border-bottom: 1px solid @color-light;
+//     }
+// }
+// @media (orientation: landscape) {
+//     .header {
+//         background-position: 0% 60%;
+//     }
+// }
+// @media (orientation: portrait) {
+//     .header {
+//         background-position: top left;
+//     }
+
+//     // .content {
+//     //     margin: 0em 1em;
+//     // }
+// }
