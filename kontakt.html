@@ -12,18 +12,22 @@
 
 <body class="page">
     <address class="address-bar">
-        <ul class="bar-list">
-            <li class="bar-list__item"><img class="filter-azure icon" src="images/email-svgrepo-com.svg" alt="email:"
+        <ul class="list">
+            <li class="list__item"><img class="filter-azure icon" src="images/email-svgrepo-com.svg" alt="email:"
                     height="25"><a href="mailto:kontakt@malgorzatabellwon.pl">
                     kontakt@malgorzatabellwon.pl</a></li>
-            <li class="bar-list__item"><img class="filter-azure icon" src="images/phone-svgrepo-com.svg" alt="telefon:"
+            <li class="list__item"><img class="filter-azure icon" src="images/phone-svgrepo-com.svg" alt="telefon:"
                     height="25"> <a href="tel:+48111111111"> +48 111 111 111</a></li>
+            <li>
+                <ul class="list">
+                    <li class="list__item"><a href="https://www.facebook.com/kowalska.malgosia">Facebook</a>
+                    </li>
+                    <li class="list__item"><a href="https://www.instagram.com">Instagram</a></li>
+                    <li class="list__item"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </li>
         </ul>
-        <ul class="bar-list">
-            <li class="bar-list__item"><a href="https://www.facebook.com/kowalska.malgosia">Facebook</a></li>
-            <li class="bar-list__item"><a href="https://www.instagram.com">Instagram</a></li>
-            <li class="bar-list__item"><a href="kontakt.html">Kontakt</a></li>
-        </ul>
+
     </address>
     <nav class="navbar" id="nav">
         <div class="navbar__logo-area">
@@ -31,13 +35,19 @@
                 <H1 class="h1">Małgorzata<br>Bellwon</H1>
             </a>
         </div>
-        <div class="navbar__nav-area">
-            <ul class="bar-list" role="list">
-                <li class="bar-list__item"><a href="index.html">Główna</a></li>
-                <li class="bar-list__item"><a href="biznes.html">Biznes</a></li>
-                <li class="bar-list__item"><a href="produkty.html">Produkty</a></li>
-                <li class="bar-list__item"><a href="kontakt.html">Kontakt</a></li>
-            </ul>
+        <div class="navbar__button-area">
+            <button id="menu-btn"><span><img class="filter-grullo icon" src="images/menu-svgrepo-com.svg" alt="menu:"
+                        height="25"></span></button>
+        </div>
+        <div class="navbar__nav-area" id="nav-area">
+            <div class="navbar__list">
+                <ul class="list nav-list" role="list">
+                    <li class="list__item"><a href="index.html">Główna</a></li>
+                    <li class="list__item"><a href="biznes.html">Biznes</a></li>
+                    <li class="list__item"><a href="produkty.html">Produkty</a></li>
+                    <li class="list__item"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <header class="page-tittle">
@@ -65,6 +75,7 @@
             by <a href="https://www.lukaszturowski.xyz/">Łukasz Turowski</a>
         </p>
     </footer>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>
