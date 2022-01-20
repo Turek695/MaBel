@@ -70,7 +70,7 @@ a:hover {
   width: 100%;
 }
 .address-bar__icon {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 .article {
@@ -84,7 +84,7 @@ a:hover {
   background-size: cover;
   background-position: 50% 35%;
   color: #ECF8F8;
-  height: 100%;
+  height: 90vh;
   text-align: right;
   width: 100%;
 }
@@ -192,7 +192,7 @@ html::-webkit-scrollbar {
   min-width: 100%;
 }
 .page-content {
-  max-width: 1024px;
+  max-width: 960px;
   margin: 0 1.5em;
 }
 .page-tittle__container {
@@ -220,13 +220,7 @@ html::-webkit-scrollbar {
   height: 1em;
   margin: auto 0.5em;
 }
-.top-container {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-}
-@media (max-width: 1024px) {
+@media (max-width: 960px) {
   .navbar__button-area {
     display: flex;
   }
