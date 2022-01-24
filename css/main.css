@@ -56,9 +56,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-a:hover {
-  border-bottom: 1px solid #ECF8F8;
-}
 .address-bar {
   align-items: center;
   background-color: #B2967D;
@@ -68,10 +65,7 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
-}
-.address-bar__icon {
-  font-size: 1.2em;
-  font-weight: bold;
+  padding: 0.5em 0;
 }
 .article {
   display: flex;
@@ -124,7 +118,7 @@ a:hover {
 }
 .h1 {
   font-size: 1.5em;
-  font-weight: bolder;
+  font-weight: bold;
 }
 .h2 {
   font-size: 2em;
@@ -154,7 +148,8 @@ html::-webkit-scrollbar {
 .list__item {
   flex-shrink: 2;
   font-size: 0.9em;
-  margin: 0.2em 1em;
+  margin: 0.2em 0.2em;
+  padding: 0.5em 0;
   text-align: center;
 }
 .navbar {
@@ -167,7 +162,7 @@ html::-webkit-scrollbar {
   width: 100vw;
 }
 .navbar .list__item {
-  padding: 0 auto;
+  padding: 0 0.5em;
 }
 .navbar__button-area {
   display: none;
@@ -180,7 +175,7 @@ html::-webkit-scrollbar {
 }
 .navbar__nav-area {
   flex: 1 2 50vw;
-  font-weight: bold;
+  font-weight: normal;
 }
 .page {
   background-color: #ECF8F8;
@@ -194,6 +189,7 @@ html::-webkit-scrollbar {
 .page-content {
   max-width: 960px;
   margin: 0 1.5em;
+  margin-bottom: 2em;
 }
 .page-tittle__container {
   width: 200px;
@@ -215,10 +211,24 @@ html::-webkit-scrollbar {
   top: 90vh;
   transition: all 1s ease-in-out;
 }
+.scroll-up__link {
+  background-color: #B2967D;
+  border-radius: 50%;
+  color: #ECF8F8;
+  padding: 0 0.25em;
+}
 .svg-icon {
   display: inline-block;
-  height: 1em;
+  height: 1.2em;
   margin: auto 0.5em;
+}
+.video {
+  width: 100%;
+}
+.yt-embed {
+  aspect-ratio: 560/315;
+  width: 100%;
+  height: auto;
 }
 @media (max-width: 960px) {
   .navbar__button-area {
