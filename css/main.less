@@ -5,13 +5,17 @@
 @color-isabelline: #EEE4E1;
 @color-almond: #E7D8C9;
 @color-sand: #E6BEAE;
-@color-grullo: #B2967D;
+// @color-grullo: #B2967D;
+@color-brown: #8A5A44;
+
 
 @color-light: @color-azure;
-@color-dark: @color-grullo;
+@color-dark: @color-brown;
+
 
 a{
     text-decoration: none;
+    text-decoration-color: inherit;
     color: inherit;
 }
 
@@ -47,33 +51,35 @@ a{
 .banner-text {
     font-weight: normal;
     font-size: 5em;
+    display: none;
     // margin: 3em 2em;
 }
 
-.button-link {
-    width: 90%;
-    padding: 1.5em 0;
-    background-color: @color-dark;
-    color: @color-light;
-    text-align: center;
-    margin: 0.5em 0;
-}
+// .button-link {
+//     width: 90%;
+//     padding: 1.5em 0;
+//     background-color: @color-dark;
+//     color: @color-light;
+//     text-align: center;
+//     margin: 0.5em 0;
+// }
 
-.button-link-container {
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-width: 700px;
-    width: 100%;
-}
+// .button-link-container {
+//     align-content: center;
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+//     max-width: 700px;
+//     width: 100%;
+// }
 
 .filter-azure {
     filter: invert(100%) sepia(15%) saturate(925%) hue-rotate(158deg) brightness(100%) contrast(95%);
 }
-.filter-grullo {
+.filter-brown {
     filter: invert(59%) sepia(32%) saturate(304%) hue-rotate(347deg) brightness(98%) contrast(85%);
 }
+//https://codepen.io/sosuke/pen/Pjoqqp
 
 .footer {
     background-color: @color-dark;
@@ -84,17 +90,20 @@ a{
 }
 
 .h1 {
+    color: inherit;
     font-size: 1.5em;
     font-weight: bold;
 }
 
 .h2 {
+    color: inherit;
     font-size: 2em;
     font-weight: normal;
     margin-top: 0.5em;
 }
 
 .h3 {
+    color: inherit;
     font-size: 1,5em;
     font-weight: bold;
 }
@@ -109,7 +118,14 @@ html::-webkit-scrollbar {
     display: none;
 }
 
+.input-color {
+    height: 1.5em;
+    width: 2em;
+}
+
 .list {
+    background-color: inherit;
+    color: inherit;
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
@@ -119,6 +135,8 @@ html::-webkit-scrollbar {
 }
 
 .list__item {
+    background-color: inherit;
+    color: inherit;
     flex-shrink: 2;
     font-size: 0.9em;
     margin: 0.2em 0.2em;
@@ -194,18 +212,19 @@ html::-webkit-scrollbar {
     transition: all 1s ease-in-out;
 }
 
-.scroll-up__link {
-    // background-color: @color-dark;
-    // border-radius: 50%;
-    // color: @color-light; 
-    // padding: 0 0.25em;
-}
+// .scroll-up__link {
+//     // background-color: @color-dark;
+//     // border-radius: 50%;
+//     // color: @color-light; 
+//     // padding: 0 0.25em;
+// }
 
 .svg-icon {
     display: inline-block;
     height: 1.2em;
     margin: auto 0.5em;
 }
+
 
 .video-container {
     width: 100%;
@@ -221,7 +240,7 @@ html::-webkit-scrollbar {
     .navbar__button-area {
         display: flex;
     }
-
+    
     .navbar__nav-area {
         display: none;
         height: 0;
@@ -233,57 +252,67 @@ html::-webkit-scrollbar {
     }
     
     // .gallery img {
-    //     object-fit:cover;
-    //     height: 400px;
-    //     &:hover {
-    //         transform: scale(1.6);
-    //         object-fit: scale-down;
-    //         z-index: 1;
+        //     object-fit:cover;
+        //     height: 400px;
+        //     &:hover {
+            //         transform: scale(1.6);
+            //         object-fit: scale-down;
+            //         z-index: 1;
+            //     }
+            // }
+        }
+        // @media (prefers-color-scheme: light) {
+            //     .body {
+                //         .theme (light);
+                //     }
+                
+                //     .footer {
+                    //         .theme (dark);
+                    //     }
+                    
+                    //     .underline {
+                        //         border-bottom: 1px solid @color-dark;
+                        //     }
+                        // }
+                        // @media (prefers-color-scheme: dark) {
+                            //     .body {
+                                //         .theme (dark);
+                                //     }
+                                
+//     .footer {
+    //         .theme (light);
     //     }
-    // }
+    
+    //     .underline {
+        //         border-bottom: 1px solid @color-light;
+        //     }
+        // }
+        // @media (orientation: landscape) {
+            //     .header {
+                //         background-position: 0% 60%;
+                //     }
+                // }
+                // @media (orientation: portrait) {
+                    //     .header {
+                        //         background-position: top left;
+                        //     }
+                        
+                        //     // .content {
+                            //     //     margin: 0em 1em;
+                            //     // }
+                            // }
+                            
+                            .displayed {
+                                display: flex;
+                                height: auto;
 }
-// @media (prefers-color-scheme: light) {
-//     .body {
-//         .theme (light);
-//     }
 
-//     .footer {
-//         .theme (dark);
-//     }
+.theme-dark {
+    background-color: @color-dark;
+    color: @color-light;
+}
 
-//     .underline {
-//         border-bottom: 1px solid @color-dark;
-//     }
-// }
-// @media (prefers-color-scheme: dark) {
-//     .body {
-//         .theme (dark);
-//     }
-
-//     .footer {
-//         .theme (light);
-//     }
-
-//     .underline {
-//         border-bottom: 1px solid @color-light;
-//     }
-// }
-// @media (orientation: landscape) {
-//     .header {
-//         background-position: 0% 60%;
-//     }
-// }
-// @media (orientation: portrait) {
-//     .header {
-//         background-position: top left;
-//     }
-
-//     // .content {
-//     //     margin: 0em 1em;
-//     // }
-// }
-
-.displayed {
-    display: flex;
-    height: auto;
+.theme-light {
+    background-color: @color-light;
+    color: @color-dark;
 }

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Małgorzata Bellwon - Strona główna</title>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"
+        integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +16,8 @@
         rel="stylesheet">
 </head>
 
-<body class="page" id="top">
-    <address class="address-bar">
+<body class="page theme-light" id="top">
+    <address class="address-bar theme-dark">
         <ul class="list">
             <li class="list__item"> <img class="filter-azure svg-icon " src="images/o-phone-svgrepo-com.svg"
                     alt="phone"><a href="tel:+48111111111"> +48
@@ -36,7 +38,7 @@
             <li class="list__item no-padding"><a href="kontakt.html">Kontakt</a></li>
         </ul>
     </address>
-    <nav class="navbar" id="nav">
+    <nav class="navbar theme-dark" id="nav">
         <div class="navbar__logo-area">
             <a href="index.html" alt="Małgorzata Bellwon">
                 <H1 class="h1">Małgorzata<br>Bellwon</H1>
@@ -57,11 +59,11 @@
             </ul>
         </div>
     </nav>
-    <header class="banner">
+    <header class="banner theme-dark">
         <h2 class="banner-text">Solidny biznes</h2>
     </header>
     <div class="scroll-up">
-        <a class="scroll-up__link" href="#top"><img class="filter-grullo svg-icon"
+        <a class="scroll-up__link" href="#top"><img class="filter-brown svg-icon"
                 src="images/o-arrow-up-1-svgrepo-com.svg" alt="menu:"></a>
     </div>
 
@@ -154,8 +156,21 @@
                     molestias minima reprehenderit quas.</p>
             </section>
         </article>
+        <section class="color-picker section">
+            <h3>Color Picker</h3>
+            <form class="form-color">
+                <label for="color1">Color 1:</label>
+                <input class="input-color" type="color" name="color" placeholder="xffffff">
+                <button class="button-color">Change Color 1</button>
+            </form>
+            <form class="form-color">
+                <label for="color">Color 2:</label>
+                <input class="input-color" type="color" name="color">
+                <button class="button-color">Change Color 2</button>
+            </form>
+        </section>
     </main>
-    <footer class="footer">
+    <footer class="footer theme-dark">
         <p>
             Copyright &copy; Małgorzata Bellwon. All Rights Reserved.
         </p>
@@ -164,6 +179,8 @@
         </p>
     </footer>
     <script src="js/menu.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/color-picker.js"></script>
 </body>
 
 </html>

@@ -54,11 +54,12 @@ textarea {
 }
 a {
   text-decoration: none;
+  text-decoration-color: inherit;
   color: inherit;
 }
 .address-bar {
   align-items: center;
-  background-color: #B2967D;
+  background-color: #8A5A44;
   color: #ECF8F8;
   display: flex;
   flex-flow: row;
@@ -73,7 +74,7 @@ a {
   align-items: center;
 }
 .banner {
-  background-color: #B2967D;
+  background-color: #8A5A44;
   background-image: url(../images/PAT_9275.jpg);
   background-size: cover;
   background-position: 50% 35%;
@@ -85,46 +86,34 @@ a {
 .banner-text {
   font-weight: normal;
   font-size: 5em;
-}
-.button-link {
-  width: 90%;
-  padding: 1.5em 0;
-  background-color: #B2967D;
-  color: #ECF8F8;
-  text-align: center;
-  margin: 0.5em 0;
-}
-.button-link-container {
-  align-content: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-width: 700px;
-  width: 100%;
+  display: none;
 }
 .filter-azure {
   filter: invert(100%) sepia(15%) saturate(925%) hue-rotate(158deg) brightness(100%) contrast(95%);
 }
-.filter-grullo {
+.filter-brown {
   filter: invert(59%) sepia(32%) saturate(304%) hue-rotate(347deg) brightness(98%) contrast(85%);
 }
 .footer {
-  background-color: #B2967D;
+  background-color: #8A5A44;
   color: #ECF8F8;
   text-align: center;
   padding: 0.5em 0;
   width: 100%;
 }
 .h1 {
+  color: inherit;
   font-size: 1.5em;
   font-weight: bold;
 }
 .h2 {
+  color: inherit;
   font-size: 2em;
   font-weight: normal;
   margin-top: 0.5em;
 }
 .h3 {
+  color: inherit;
   font-size: 1,5em;
   font-weight: bold;
 }
@@ -136,7 +125,13 @@ html {
 html::-webkit-scrollbar {
   display: none;
 }
+.input-color {
+  height: 1.5em;
+  width: 2em;
+}
 .list {
+  background-color: inherit;
+  color: inherit;
   display: flex;
   flex-grow: 1;
   flex-wrap: wrap;
@@ -145,6 +140,8 @@ html::-webkit-scrollbar {
   list-style: none;
 }
 .list__item {
+  background-color: inherit;
+  color: inherit;
   flex-shrink: 2;
   font-size: 0.9em;
   margin: 0.2em 0.2em;
@@ -178,7 +175,7 @@ html::-webkit-scrollbar {
 }
 .page {
   background-color: #ECF8F8;
-  color: #B2967D;
+  color: #8A5A44;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -240,4 +237,12 @@ html::-webkit-scrollbar {
 .displayed {
   display: flex;
   height: auto;
+}
+.theme-dark {
+  background-color: #8A5A44;
+  color: #ECF8F8;
+}
+.theme-light {
+  background-color: #ECF8F8;
+  color: #8A5A44;
 }
